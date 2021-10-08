@@ -1,0 +1,179 @@
+:root {
+    --logo: #14bfcc;
+    --topHeader: #f5f5f5;
+    --emailBorder: #f8de38;
+    --btnBackground: #575a59;
+    --footerBackground: #444b4c;
+    --newBackground: #ff0097;
+
+}
+
+*{box-sizing: border-box;}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+
+
+a {
+    color: var(--btnBackground);
+}
+
+h2 {
+    color: var(--btnBackground);
+}
+
+hr {
+    height: 1px;
+    color: var(--btnBackground);
+}
+
+.btn {
+    background-color: var(--btnBackground);
+    color: var(--topHeader);
+}
+
+.topHeaderSection {
+    background-color: var(--topHeader);
+}
+
+.topHeaderLogin, .topHeaderCreate {
+    color: var(--logo);
+}
+
+.navButtons {
+    position: right;
+}
+
+.mainHeaderBtn {
+    color: var(--btnBackground);
+    background-color: var(--topHeader);
+}
+
+.cartBtn {
+    color: var(--topHeader);
+    background-color: var(--logo);
+}
+
+.mainNavItem {
+    font-weight: bold;
+}
+
+.searchBtn {
+    background-color: #e6e6e6;
+}
+
+.addImg {
+    margin-left: 30%;
+}
+
+.imgContainer {
+    position: relative;
+}
+
+.itemNew {
+    position: absolute;
+    text-align: center;
+    width: 20%;
+    margin: 5px 0 0 0;
+    /* z-index: 1; */
+    color: var(--topHeader);
+    background-color: var(--newBackground);
+}
+
+.price {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    /* width: 80px; */
+    text-align: center;
+    /* font-size: 14px; */
+    font-weight: bold;
+    background-color: var(--logo);
+    color: var(--topHeader);
+    border-radius: 50%;
+}
+
+.itemName {
+    text-align: center;
+}
+
+.sign-upSec {
+    height: auto;
+    margin: 0;
+    color: var(--footerBackground);
+    background-color: var(--topHeader);
+}
+
+.sign-upSec input {
+    height: 75%;
+    color: var(--footerBackground);
+    background-color: var(--topHeader);
+    border: 2px solid var(--emailBorder);
+    border-radius: 5px;
+}
+
+.sign-upSec .btn {
+    border: none;
+}
+
+footer {
+    background-color: var(--footerBackground);
+}
+
+footer ul {
+    color: var(--logo);
+    
+}
+
+footer h3, .listLink {
+    color: var(--topHeader);
+}
+
+.footerText, .footerSubText {
+    color: var(--topHeader);
+}
+
+.socialLink {
+    background-color: var(--footerBackground);
+}
+
+footer .icon {
+    color: var(--topHeader);
+}
+
+.coloSection {
+    text-align: center;
+    color: var(--topHeader);
+}
+
+@media (max-width: 895px) {
+    .topNavItem {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .topHeaderText {
+        display: none;
+        width: 5%;
+    }
+
+    .topNav {
+        width: 100%;
+    }
+}
